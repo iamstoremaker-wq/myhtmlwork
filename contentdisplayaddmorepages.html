@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web Development Portfolio</title>
+    <style>
+        body,
+        html {
+            height: 100%;
+            margin: 0;
+            font-size: 16px;
+            font-family: "Lato", sans-serif;
+            font-weight: 400;
+            line-height: 1.8em;
+            color: #666;
+            background-color: #0d1117;
+        }
+
+        .topnav {
+            overflow: hidden;
+            background-color: #161b22;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .topnav a {
+            display: inline-block;
+            color: #58a6ff;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .topnav a:hover {
+            background-color: #21262d;
+            color: #ecf2f8;
+        }
+
+        .pimg1,
+        .pimg2,
+        .pimg3 {
+            position: relative;
+            opacity: 0.75;
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+        }
+
+        .pimg1 {
+            background-image: url('image1.jpg');
+            min-height: 100%;
+        }
+
+        .pimg2 {
+            background-image: url('image2.jpg');
+            min-height: 400px;
+        }
+
+        .pimg3 {
+            background-image: url('image3.jpg');
+            min-height: 400px;
+        }
+
+        .section {
+            text-align: center;
+            padding: 60px 80px;
+        }
+
+        .section-light {
+            background-color: #f6f8fa;
+            color: #24292f;
+        }
+
+        .section-dark {
+            background-color: #161b22;
+            color: #c9d1d9;
+        }
+
+        .ptext {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 100%;
+            text-align: center;
+            color: #fff;
+            font-size: 27px;
+            letter-spacing: 8px;
+            text-transform: uppercase;
+        }
+
+        .ptext .border {
+            background-color: #0d1117;
+            color: #fff;
+            padding: 20px;
+            border: 1px solid #30363d;
+        }
+
+        .ptext .border.trans {
+            background-color: transparent;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+        }
+
+        @media(max-width:768px) {
+
+            .pimg1,
+            .pimg2,
+            .pimg3 {
+                background-attachment: scroll;
+            }
+
+            .section {
+                padding: 40px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact Us</a>
+    </div>
+
+    <!-- Parallax Hero Block (Fixes your image1 grid layout visibility) -->
+    <div id="home" class="pimg1">
+        <div class="ptext">
+            <span class="border trans" style="font-size:40px;">Welcome to My Workspace</span>
+        </div>
+    </div>
+
+    <!-- Section One -->
+    <section id="about" class="section section-dark">
+        <h2>Web Development</h2>
+        <p>
+            Web development is the structural and creative engineering involved in building websites for the Internet or
+            private intranets. It encompasses a vast landscape ranging from single plain-text static pages to complex
+            web applications, electronic businesses, and immersive social network architectures.
+        </p>
+    </section>
+
+    <!-- Parallax Image Two -->
+    <div id="gallery" class="pimg2">
+        <div class="ptext">
+            <span class="border">Creative Designs</span>
+        </div>
+    </div>
+
+    <!-- Section Two -->
+    <section class="section section-light">
+        <h2>Modern Engineering</h2>
+        <p>
+            By leveraging semantic markup, resilient programming logic, and responsive design systems, developers
+            construct user interfaces that scale organically across platforms. Crafting seamless user experiences
+            requires balancing precise system architecture with modular, expressive frontend designs.
+        </p>
+    </section>
+
+    <!-- Parallax Image Three -->
+    <div class="pimg3">
+        <div class="ptext">
+            <span class="border trans">Innovative Solutions</span>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <section id="contact" class="section section-dark">
+        <span>All &copy; copyrights reserved by Abdullah Shakeel</span>
+    </section>
+</body>
+
+</html>
